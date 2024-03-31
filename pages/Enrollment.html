@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Enrollment Form</title>
+    <link rel="icon" href="/logo-search-grid-1x.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF; /* White background */
+            color: #000; /* Black text */
+        }
+
+        .newContainer-fluid {
+            max-width: 800px;
+            margin: 90px auto;
+            padding: 20px;
+        }
+        .newContainer-fluid h2{
+            text-align: center;
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #FF0000; /* Red button */
+            color: #FFF; /* White text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #CC0000; /* Darker red on hover */
+        }
+        .align{
+            display: flex;
+            gap:10px
+        }
+    </style>
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="/home"><div class="logo"><img src="/logo-search-grid-1x.png" alt=""></div></a>
+            <ul class="nav-links">
+                <li><a href="/home">Home</a></li>
+                <li class="dropdown">
+                    <a href="/about">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="/history">Our History</a>
+                        <a href="/ourTeam">Our Team</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/tour">Tour</a>
+                    <div class="dropdown-content">
+                        <a href="/tour">Video Tour</a>
+                        <a href="/tour#PhotoTour">Photo Tour</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/home#ourFacilities">Branches</a>
+                    <div class="dropdown-content">
+                        <a href="/mainBranch">Nairobi Branch</a>
+                        <a href="/townBranch">Naivasha Branch</a>
+                        <a href="/kayoleBranch">Mombasa Branch</a>
+                    </div>
+                </li>
+                <li><a href="/events">Events</a></li>
+                <li>    <div class="container-fluid" id="HomeEnrollButton">
+                    <a href="/enrollment" class="container-fluid" id="HomeEnrollButton">Enroll Now</a>
+                </li>
+            </ul>
+            <div class="menu-btn" id="menuBtn">&#9776;</div>
+        </div>
+    </nav>
+<div class="newContainer-fluid">
+    <h2>School Enrollment Form</h2>
+    <form action="http://localhost:5000/data" method="post">
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="parentEmail">Parent's Email:</label>
+            <input type="email" id="parentEmail" name="parentEmail" required>
+        </div>
+        <div class="form-group align">
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required> 
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="grade">Grade:</label>
+            <select id="grade" name="grade" required>
+                <option value="">Select Grade</option>
+                <option value="1">kindergarten</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="3">Grade 4</option>
+                <option value="3">Grade 5</option>
+                <option value="3">Grade 6</option>
+                <option value="3">Grade 7</option>
+                <option value="3">Grade 8</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select a Branch</option>
+                <option value="Main">Main</option>
+                <option value="Naivasha">Naivasha</option>
+                <option value="Kayole">Kayole</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna a ligula posuere consectetur.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/enrollment">Admissions</a></li>
+                <li><a href="#/events">Events</a></li>
+                <li><a href="/admin">Admin Portal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Social Media links</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instargram</a></li>
+               <li><a href="https://www.tiktok.com/en/" target="_blank">Tiktok</a></li> 
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>123 School Street, City</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Lords Premier. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

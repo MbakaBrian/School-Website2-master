@@ -1,0 +1,168 @@
+/* Reset default margin and padding */
+body, h2, form, input, textarea {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  form {
+    max-width: 600px; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label-text {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #C62828; /* Update the primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #8e0000; /* Darken the color on hover */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 90%; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  
+  /* Navigation styles */
+  .Navcontainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+  }
+  
+  .logo {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  
+  .nav-links li {
+      margin-right: 20px;
+  }
+  
+  .nav-links li:last-child {
+      margin-right: 0;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      color: #c40000; /* Changed color to white */
+  }
+  
+  .menu-btn {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+  }
+  
+  .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }
+  
+  .container h2 {
+      text-align: center;
+  }
+  
+  .form-group {
+      margin-bottom: 20px;
+  }
+  
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  .form-group input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+  }
+  
+
+  /* Remaining CSS styles */
+  /* Paste the rest of the CSS styles from the second snippet here */

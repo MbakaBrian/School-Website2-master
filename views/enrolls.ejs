@@ -1,0 +1,98 @@
+<!-- studentList.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <style>
+   /* styles.css */
+
+/* Reset default margin and padding */
+body, h2, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black /* Updated text color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF; /* Updated background color */
+    border-radius: 8px; /* Adding border radius */
+    overflow: hidden; /* Preventing table overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+}
+
+thead {
+    background-color: #C62828; /* Updated background color */
+    color: #FFFFFF; /* Updated text color */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Parent Email</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% students.forEach(student => { %>
+                <tr>
+                    <td><%= student.fullName %></td>
+                    <td><%= student.parentEmail %></td>
+                    <td><%= student.gender %></td>
+                    <td><%= student.age %></td>
+                    <td><%= student.grade %></td>
+                    <td><%= student.branch %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

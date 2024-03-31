@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo img {
+width: 35%;
+height: 35%;
+margin: 0%;
+padding: 0%;
+}
+.logo::after {
+    text-decoration: none;
+    content: "Destiney Premier Academy";
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    font-family: "Holtwood One SC", serif ;
+  }
+
+  #PhotoTour img{
+    width: 500px;
+  }
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.diplayborders h2:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* Ensure images don't exceed container height */
+.column img {
+    max-height: 100%;
+    width: auto;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#backgroundVideo {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.5s, height 0.5s; /* Add transition for smooth zoom effect */
+}
+
+
+.carousel-caption {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(0%, -40%);
+    text-align: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a background color with some transparency for better readability */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    color: white; /* Optional: Set text color */
+  }
+  .carousel-item img {
+    margin-top: 10vh;
+    max-height: 80vh; /* Adjust the maximum height as needed */
+    width: auto;
+}
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+h3 {
+    padding: 10px;
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+#missionSection{
+    color: white;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+}
+  
+/*home button enroll button style */
+#HomeEnrollButton {
+    justify-content:center;
+    text-align:center;
+}
+#HomeEnrollButton a {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Green */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#HomeEnrollButton a:hover {
+    background-color: #cc0000; /* Darker shade of red */
+}
+/* Sticky Navbar */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/*view more button style*/
+#viewMoreButton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff0000; /* Red */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #ff0000; /* Red border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+#viewMoreButton:hover {
+    background-color: #cc0000; /* Darker shade of red */
+    border-color: #cc0000; /* Darker shade of red border */
+    color: #ffffff; /* White text color */
+}
+
+#landingPage{
+    color: white;
+    padding: 0;
+    height: 200px;
+    background-color: #1b0f3ac4;
+    margin-top: 90px;
+}
+
+#team{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#landingPage h2,#landingPage p{
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#landingPage h2{
+    padding-top: 25px;
+}
+/*footer styles */ 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Footer link styles */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #bbb;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1); /* Zoom in effect */
+  }
+}
+
+/* Apply the animation to the text when hovered */
+
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    #navbar .container{
+        display: flex;
+        background-color: #ff0000;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px; /* Height of the navbar */
+        left: 0;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links li {
+        color:rgb(255, 255, 255);
+        display: block;
+        margin: 10px 0;
+    }
+    .nav-links li a{
+        color:rgb(255, 255, 255);
+    }
+    .nav-links.active {
+        color: #333;
+        display: block;
+        text-align: center;
+    }
+    footer .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+    #missionSection{
+        display: none;
+    }
+    #HomeEnrollButton a{
+        background-color: white;
+        color: #ff0000;
+        font-style: bold;
+    }
+    #HomeEnrollButton a:hover{
+        background-color: white;
+        color: #cc0000;
+    }
+}
+/* Add styles for the active class to show/hide the navigation links */
+
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    width: 200px;
+    border-radius: 20%;
+    position: absolute;
+    background-color: #142041;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Delayed display */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* style.css */
+
+/* Hide images on small screens */
+@media (max-width: 767px) {
+    .logo img{
+        display: none;
+    }
+    .logo::after{
+        display: block;
+    }
+    .container .column {
+        display: block;
+        width: 100%;
+    }
+    .container{
+        display: block;
+    }
+
+    img{
+        width: 100px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

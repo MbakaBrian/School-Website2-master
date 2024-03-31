@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f2f2f2;
+      }
+      .container {
+          max-width: 800px;
+          margin: 100px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+          text-align: center;
+          margin-bottom: 30px;      }
+      .links {
+          text-align: center;
+          margin-top: 30px;
+      }
+      .links a {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 0 10px;
+          background-color: #C62828; /* Update the background color */
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      .links a:hover {
+          background-color: #8e0000; /* Darken the background color on hover */
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <div class="links">
+            <a href="http://localhost:5000/enrolls">View Enrollments</a>
+            <a href="http://localhost:5000/create-event">Create Event</a>
+        </div>
+    </div>
+</body>
+</html>
